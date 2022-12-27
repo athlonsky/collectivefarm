@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/menuText"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="МЕНЮ"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <Button
+        android:id="@+id/buttonRecordOfWork"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="250dp"
+        android:text="УЧЁТ РАБОТ"
+        app:cornerRadius="20dp"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <Button
+        android:id="@+id/buttonAddStudent"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="ДОБАВИТЬ СТУДЕНТА"
+        app:cornerRadius="20dp"
+        android:layout_gravity="center_horizontal"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="370dp" />
+
+    <Button
+        android:id="@+id/buttonExport"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="ЭКСПОРТ"
+        app:cornerRadius="20dp"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center_horizontal"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="664dp" />
+
+</LinearLayout>
