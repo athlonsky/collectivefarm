@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,4 +17,97 @@
         android:textSize="30sp"
         tools:layout_editor_absoluteX="160dp"
         tools:layout_editor_absoluteY="32dp" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ИМЯ СТУДЕНТА"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ФАМИЛИЯ СТУДЕНТА"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:ems="20"
+        android:inputType="text"
+        android:text=""
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textMiddleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ОТЧЕСТВО СТУДЕНТА"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextMiddleName"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:ems="20"
+        android:inputType="text"
+        android:text=""
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ГРУППА СТУДЕНТА"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextGroup"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:layout_gravity="center_horizontal" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLoader"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="Является ли студент погрузчиком?"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/buttonExport"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:text="ДОБАВИТЬ СТУДЕНТА"
+        app:cornerRadius="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal" />
+
 </LinearLayout>
