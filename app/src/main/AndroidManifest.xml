@@ -27,5 +27,8 @@
         <activity
             android:name=".RecordOfWork">
         </activity>
+        <activity
+            android:name=".StudentList">
+        </activity>
     </application>
 </manifest>

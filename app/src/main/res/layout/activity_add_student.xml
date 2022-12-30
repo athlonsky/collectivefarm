@@ -72,6 +72,7 @@
         android:ems="20"
         android:inputType="text"
         android:text=""
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal" />
 
     <TextView
@@ -90,6 +91,7 @@
         android:ems="10"
         android:inputType="text"
         android:text=""
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal" />
 
     <CheckBox
@@ -102,12 +104,12 @@
         android:layout_gravity="center_horizontal" />
 
     <Button
-        android:id="@+id/buttonExport"
+        android:id="@+id/buttonAddStudent"
         android:layout_width="230dp"
         android:layout_height="50dp"
         android:text="ДОБАВИТЬ СТУДЕНТА"
         app:cornerRadius="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

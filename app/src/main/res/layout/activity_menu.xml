@@ -38,6 +38,15 @@
         android:layout_gravity="center_horizontal"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="370dp" />
+    <Button
+        android:id="@+id/buttonViewStudent"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="СПИСОК СТУДЕНТОВ"
+        app:cornerRadius="20dp"
+        android:layout_gravity="center_horizontal"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="370dp" />
 
     <Button
         android:id="@+id/buttonExport"
@@ -45,7 +54,7 @@
         android:layout_height="50dp"
         android:text="ЭКСПОРТ"
         app:cornerRadius="20dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="150dp"
         android:layout_gravity="center_horizontal"
         tools:layout_editor_absoluteX="153dp"
         tools:layout_editor_absoluteY="664dp" />
