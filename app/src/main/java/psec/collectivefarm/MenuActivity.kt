@@ -1,10 +1,10 @@
 package psec.collectivefarm
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 class MenuActivity : AppCompatActivity(), View.OnClickListener {
     private var recordOfWork: Button? = null
@@ -22,11 +22,12 @@ class MenuActivity : AppCompatActivity(), View.OnClickListener {
         activityViewStudent!!.setOnClickListener(this)
 
     }
+
     override fun onClick(view: View) {
         when (view.id) {
             R.id.buttonRecordOfWork -> startActivity(Intent(this, RecordOfWork::class.java))
             R.id.buttonAddStudent -> startActivity(Intent(this, AddStudent::class.java))
-            R.id.buttonViewStudent -> startActivity(Intent(this, StudentList::class.java))
+            R.id.buttonViewStudent -> startActivity(Intent(this, StudentListActivity::class.java))
         }
     }
 }

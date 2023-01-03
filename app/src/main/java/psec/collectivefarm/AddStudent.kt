@@ -1,19 +1,27 @@
 package psec.collectivefarm
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import psec.collectivefarm.database.MainDB
+import android.widget.Toast
+import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProviders
+import psec.collectivefarm.database.entity.Bucket
 import psec.collectivefarm.database.entity.Student
+import psec.collectivefarm.database.entity.StudentWithBuckets
 import psec.collectivefarm.databinding.ActivityAddStudentBinding
 
 class AddStudent : AppCompatActivity() {
     lateinit var binding: ActivityAddStudentBinding
+
+    private val viewModel: StudentViewModel by viewModels {
+        StudentViewModelFactory(
+            (this.application as MyApplication).database.getStudentsDao()
+        )
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAddStudentBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        val db = MainDB.getDB(this)
 
         binding.buttonAddStudent.setOnClickListener {
             val student = Student(
@@ -23,10 +31,9 @@ class AddStudent : AppCompatActivity() {
                 group = binding.editTextGroup.text.toString(),
                 loader = binding.checkBoxLoader.isChecked
             )
-            Thread {
-                db.getStudentsDao().insertStudent(student)
-            }.start()
-
+            val studentWithBuckets = StudentWithBuckets(student, Bucket())
+            viewModel.addStudent(studentWithBuckets)
+            Toast.makeText(this, "Студент был успешно добавлен!", Toast.LENGTH_SHORT).show()
         }
     }
 }
